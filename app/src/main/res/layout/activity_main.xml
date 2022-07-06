@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D6FFF7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="@string/author"
+            android:textColor="#0066FF"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/length" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#CFCFCF"
+        android:fadingEdge="horizontal|vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="From"
+            android:textAllCaps="true"
+            android:textColorHint="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="To"
+            android:textAllCaps="true"
+            android:textColorHint="#F44336"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/unitList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:divider="#1A60ED"
+        android:dividerHeight="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5D5D5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:shadowColor="#616161"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="10"
+            android:text="@string/reset"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/proceed"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:shadowColor="#616161"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="10"
+            android:text="@string/proceed"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</LinearLayout>

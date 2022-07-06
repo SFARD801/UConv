@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UConv</string>
+    <string name="author"><b>Length Unit Converter</b>\nBy <i>Sadra Nakhlestani</i></string>
+    <string name="title"><b>Length</b><sub>Demo</sub></string>
+    <string name="proceed">Proceed</string>
+    <string name="reset">Reset</string>
+</resources>
